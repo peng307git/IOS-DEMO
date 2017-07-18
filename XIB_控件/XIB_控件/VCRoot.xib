@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCRoot">
+            <connections>
+                <outlet property="login" destination="eqp-0g-40m" id="pO4-Sd-5G6"/>
+                <outlet property="reset" destination="Oxd-ks-TS9" id="3me-b5-Ll3"/>
+                <outlet property="textName" destination="OSb-Xh-53x" id="BII-ME-c5L"/>
+                <outlet property="textPass" destination="N5X-Hj-cbX" id="utg-N7-cVz"/>
+                <outlet property="userName" destination="yfm-MP-XWA" id="PaZ-Vb-U0e"/>
+                <outlet property="userPass" destination="AdS-Ab-HHV" id="BrT-BJ-v11"/>
+                <outlet property="view" destination="3jz-vO-Gbs" id="Rzp-T2-Fy3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3jz-vO-Gbs">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AdS-Ab-HHV">
+                    <rect key="frame" x="34" y="154" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="0.31353737679999999" green="0.8362944162" blue="0.24144465349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <size key="shadowOffset" width="2" height="1"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入密码" textAlignment="natural" minimumFontSize="17" id="N5X-Hj-cbX">
+                    <rect key="frame" x="137" y="155" width="193" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="f5F-cu-Du2">
+                    <rect key="frame" x="44" y="441" width="286" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="5元"/>
+                        <segment title="10元"/>
+                        <segment title="15元"/>
+                        <segment title="20元"/>
+                    </segments>
+                </segmentedControl>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" id="OSb-Xh-53x">
+                    <rect key="frame" x="137" y="85" width="193" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yfm-MP-XWA">
+                    <rect key="frame" x="34" y="83" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" red="0.31353737679999999" green="0.8362944162" blue="0.24144465349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <size key="shadowOffset" width="2" height="1"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SQp-dt-Rov">
+                    <rect key="frame" x="172" y="288" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="登陆"/>
+                    <connections>
+                        <action selector="LOGIN:" destination="-1" eventType="touchUpInside" id="5uN-Cl-VJ2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mdW-Ex-4AY">
+                    <rect key="frame" x="172" y="339" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="RESET:" destination="-1" eventType="touchUpInside" id="iMB-QZ-nsK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <point key="canvasLocation" x="-318" y="-133"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4GB-RN-yrT">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <color key="highlightedColor" red="0.31353737679999999" green="0.8362944162" blue="0.24144465349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <size key="shadowOffset" width="2" height="1"/>
+            <point key="canvasLocation" x="362" y="-88"/>
+        </label>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eqp-0g-40m">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="登陆"/>
+            <state key="highlighted" title="按住">
+                <color key="titleColor" red="0.99091846446700504" green="0.17714599786499169" blue="0.22577343842505571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <point key="canvasLocation" x="11" y="-203"/>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oxd-ks-TS9">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="注册"/>
+            <point key="canvasLocation" x="129" y="-165"/>
+        </button>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
